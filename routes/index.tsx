@@ -12,16 +12,13 @@ export default function Home() {
     <>
       <div class="px-4 py-2 mx-auto">
         <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-          {/* <h1 class="text-4xl mb-6 font-bold">2024 is coming !</h1> */}
           <GradientTitle />
           <DuiCountdown />
-          <p class="my-4">
-            This is a DaisyUI countdown component.
-          </p>
-          <DuiStat />
+          <DuiStat />        
         </div>
       </div>
-      <div class="grid grid-cols-[40%_50%] gap-6 pt-6">
+      <div class="grid grid-cols-1 justify-center gap-6 pt-6">
+        <DuiModal />
         <div>
           <p>These are daisyUI components</p>
           <p> - Import daisyUI from npm.</p>
@@ -31,7 +28,6 @@ export default function Home() {
           <button class="btn btn-success">Success</button>
           <button class="btn btn-warning">Warning</button>
           <button class="btn btn-error">Error</button>
-          <DuiModal />
         </div>
         <div>
           <p>This is an imported "Tab" component from HeadlessUI</p>
