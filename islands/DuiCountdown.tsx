@@ -35,7 +35,7 @@ export function DuiCountdown(){
   }
 
   return (
-    <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+    <div className="grid grid-flow-col gap-5 text-center auto-cols-max py-6">
       <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
         <span className="countdown font-mono text-5xl">
           <span style={{"--value":timeLeft.value.days}}></span>

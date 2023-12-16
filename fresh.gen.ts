@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $test from "./routes/test.tsx";
 import * as $DuiCountdown from "./islands/DuiCountdown.tsx";
 import * as $DuiModal from "./islands/DuiModal.tsx";
 import * as $DuiStat from "./islands/DuiStat.tsx";
@@ -20,6 +21,7 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
+    "./routes/test.tsx": $test,
   },
   islands: {
     "./islands/DuiCountdown.tsx": $DuiCountdown,

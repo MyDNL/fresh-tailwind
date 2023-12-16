@@ -1,0 +1,69 @@
+{
+  "build_id": "b3d15371a3ee6f9f0217ed8a86621beec01af901",
+  "files": {
+    "main.js": [
+      "chunk-553XMLVK.js",
+      "chunk-2GUEMEWN.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "deserializer.js": [
+      "chunk-Z47A3HLT.js"
+    ],
+    "signals.js": [
+      "chunk-OMXNWJYG.js",
+      "chunk-2GUEMEWN.js",
+      "chunk-7XBR77FJ.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "island-duicountdown.js": [
+      "chunk-553XMLVK.js",
+      "chunk-MDUSFD7Q.js",
+      "chunk-OMXNWJYG.js",
+      "chunk-2GUEMEWN.js",
+      "chunk-7XBR77FJ.js",
+      "chunk-3MXJYX4G.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "chunk-553XMLVK.js": [],
+    "island-duimodal.js": [
+      "chunk-3MXJYX4G.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "island-duistat.js": [
+      "chunk-MDUSFD7Q.js",
+      "chunk-OMXNWJYG.js",
+      "chunk-2GUEMEWN.js",
+      "chunk-7XBR77FJ.js",
+      "chunk-3MXJYX4G.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "chunk-MDUSFD7Q.js": [
+      "chunk-OMXNWJYG.js"
+    ],
+    "chunk-OMXNWJYG.js": [
+      "chunk-7XBR77FJ.js",
+      "chunk-VZ4DKIQG.js"
+    ],
+    "chunk-2GUEMEWN.js": [],
+    "island-huitab.js": [
+      "chunk-7XBR77FJ.js",
+      "chunk-3MXJYX4G.js",
+      "chunk-VZ4DKIQG.js",
+      "chunk-Z47A3HLT.js"
+    ],
+    "chunk-7XBR77FJ.js": [
+      "chunk-VZ4DKIQG.js"
+    ],
+    "chunk-3MXJYX4G.js": [
+      "chunk-VZ4DKIQG.js"
+    ],
+    "chunk-VZ4DKIQG.js": [],
+    "chunk-Z47A3HLT.js": [],
+    "metafile.json": []
+  }
+}
