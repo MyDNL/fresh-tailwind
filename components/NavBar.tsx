@@ -3,7 +3,7 @@ export function NavBar(){
   return (
     <div class="navbar bg-base-100 glass">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">Fresh with daisyUI</a>
+        <a class="btn btn-ghost text-xl" href="/">CD24</a>
       </div>
       <div class="flex-none">
         <label class="flex cursor-pointer gap-2">
