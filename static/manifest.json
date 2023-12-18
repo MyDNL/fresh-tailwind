@@ -1,0 +1,18 @@
+{
+  "name": "Countdown 2024",
+  "short_name": "CD2024",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+  }    
+  ]
+}
