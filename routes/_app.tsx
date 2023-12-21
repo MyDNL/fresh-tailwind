@@ -5,7 +5,7 @@ import { NavBar } from "../components/NavBar.tsx";
 
 export default function App({ Component }: PageProps) {
   return (
-    <html data-theme="light">
+    <html data-theme="light">  
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />

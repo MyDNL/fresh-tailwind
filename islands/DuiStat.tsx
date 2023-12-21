@@ -2,12 +2,12 @@ import { confettiPopCount, particleCount } from "../utils/state.ts"
 
 export function DuiStat(){
   return (
-    <div className="stats stats-vertical md:stats-horizontal shadow">
+    <div className="stats stats-vertical sm:stats-horizontal shadow">
     
       <div className="stat place-items-center">
         <div className="stat-title">Confetti</div>
         <div className="stat-value">{confettiPopCount}</div>
-        <div className="stat-desc">confetties fired since refresh</div>
+        <div className="stat-desc">confetties fired</div>
       </div>
       
       <div className="stat place-items-center">
