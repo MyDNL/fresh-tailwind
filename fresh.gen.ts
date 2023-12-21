@@ -4,23 +4,24 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $api_joke from "./routes/api/joke.ts";
-import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $api_sse from "./routes/api/sse.ts";
 import * as $index from "./routes/index.tsx";
+import * as $msg from "./routes/msg.tsx";
 import * as $test from "./routes/test.tsx";
 import * as $DuiCountdown from "./islands/DuiCountdown.tsx";
 import * as $DuiModal from "./islands/DuiModal.tsx";
 import * as $DuiStat from "./islands/DuiStat.tsx";
 import * as $HuiTab from "./islands/HuiTab.tsx";
+import * as $LiveMessageBox from "./islands/LiveMessageBox.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/api/joke.ts": $api_joke,
-    "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/api/sse.ts": $api_sse,
     "./routes/index.tsx": $index,
+    "./routes/msg.tsx": $msg,
     "./routes/test.tsx": $test,
   },
   islands: {
@@ -28,6 +29,7 @@ const manifest = {
     "./islands/DuiModal.tsx": $DuiModal,
     "./islands/DuiStat.tsx": $DuiStat,
     "./islands/HuiTab.tsx": $HuiTab,
+    "./islands/LiveMessageBox.tsx": $LiveMessageBox,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

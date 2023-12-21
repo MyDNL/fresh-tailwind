@@ -10,3 +10,5 @@ export const particleCount = computed(() => {
 // export const minutesLeft = computed(() => {
 
 // })
+
+// export const liveMessage = signal<LiveMessage>( {message:"Hello World."} );

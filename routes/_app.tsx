@@ -9,7 +9,7 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <meta name="description" content="A countdown timer to 2024 with some ui effects"></meta>
+        <meta name="description" content="A countdown timer to 2024"></meta>
         <meta name="theme-color" content="oklch(var(--p))"></meta>
         <title>Countdown 2024</title>
         <link rel="stylesheet" href="/styles.css" />

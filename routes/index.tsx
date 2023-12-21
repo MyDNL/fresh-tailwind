@@ -1,6 +1,7 @@
 import { DuiStat } from "../islands/DuiStat.tsx";
 import { DuiCountdown } from "../islands/DuiCountdown.tsx";
 import { GradientTitle } from "../components/GradientTitle.tsx";
+import { LiveMessageBox } from "../islands/LiveMessageBox.tsx";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
         <GradientTitle />
         <DuiCountdown />
-        <DuiStat />        
+        <DuiStat />
+        <LiveMessageBox />
       </div>
     </div>
   );

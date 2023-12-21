@@ -12,12 +12,13 @@ console.log(new Date().toTimeString());
 export function DuiCountdown(){
   const timeLeft = useSignal({} as TimeLeft);
   const timerRunning = useSignal(false);
+ 
 
   if (!timerRunning.value) {
     timerRunning.value = true;
-    const x = setInterval(() => {
+    const x = setInterval(async () => {
                   timeLeft.value = getTimeRemaining(deadline);
-                  
+                 
                   if (timeLeft.value.seconds == 0) {
                     confettiPopCount.value += 1;
                     IS_BROWSER && confetti({
@@ -25,6 +26,10 @@ export function DuiCountdown(){
                         spread: 70,
                         origin: { y: 0.6 }
                       });
+
+                    // const url = "/api/livemessage";
+                    // const payload = {"message": "pop count:" + confettiPopCount.value.toString()};
+                    // const response =  IS_BROWSER && await fetch(url, { method: "POST", credentials: "same-origin", body: JSON.stringify(payload) });
                   };
 
                   if (timeLeft.value.over) {
