@@ -1,24 +1,35 @@
-import { signal, useSignal, effect, useSignalEffect } from "@preact/signals";
+import { useSignal, useSignalEffect } from "@preact/signals";
+// import { useEffect } from "preact/hooks";
 
 export function LiveMessageBox() {
-  const newMessage = useSignal("Happy new year.");
+  const newMessage = useSignal("");
 
   useSignalEffect(() => {
     let es = new EventSource("/api/sse");
 
-    es.addEventListener("message", (e) => {
+    const handleMessage = (e) => {
       newMessage.value = JSON.parse(e.data);
-      // newMessage.value = e.data;
-    });
+    };
 
-    es.addEventListener("error", async () => {
+    const handleConnectionError = async () => {
       es.close();
       const backoff = 5000 + Math.random() * 5000;
       await new Promise((resolve) => setTimeout(resolve, backoff));
-      es = new EventSource("/api/sse");
-    }); 
 
+      es = new EventSource("/api/sse");
+      es.addEventListener("message", handleMessage);
+      es.addEventListener("error", handleConnectionError);
+    };
+
+    es.addEventListener("message", handleMessage);
+    es.addEventListener("error", handleConnectionError);    
+
+    // Cleanup function
+    return () => {
+      es.close();
+    };
   });
+
 
   return(
     <div class="pt-6">
