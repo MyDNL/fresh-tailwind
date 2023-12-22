@@ -1,8 +1,8 @@
 import { useSignal } from "@preact/signals";
 import { TimeLeft, getTimeRemaining } from "../utils/helpers.ts";
-import confetti from "https://esm.sh/canvas-confetti@1.6.0";
-import { confettiPopCount, PARTICLE_COUNT } from "../utils/state.ts";
+import { confettiPopCount } from "../utils/state.ts";
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.6.1/runtime.ts";
+import { confetti_basic } from "../utils/client_effects.ts";
 
 
 // const deadline = Date.now() + 5000;
@@ -21,15 +21,7 @@ export function DuiCountdown(){
                  
                   if (timeLeft.value.seconds == 0) {
                     confettiPopCount.value += 1;
-                    IS_BROWSER && confetti({
-                        particleCount: PARTICLE_COUNT,
-                        spread: 70,
-                        origin: { y: 0.6 }
-                      });
-
-                    // const url = "/api/livemessage";
-                    // const payload = {"message": "pop count:" + confettiPopCount.value.toString()};
-                    // const response =  IS_BROWSER && await fetch(url, { method: "POST", credentials: "same-origin", body: JSON.stringify(payload) });
+                    IS_BROWSER && confetti_basic();
                   };
 
                   if (timeLeft.value.over) {

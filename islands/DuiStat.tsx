@@ -13,13 +13,13 @@ export function DuiStat(){
       <div className="stat place-items-center">
         <div className="stat-title">Particles</div>
         <div className="stat-value text-secondary">{particleCount}</div>
-        <div className="stat-desc text-secondary">↗︎ particles fade away</div>
+        <div className="stat-desc text-secondary">↘︎ particles fade away</div>
       </div>
       
       <div className="stat place-items-center">
-        <div className="stat-title">New Registers</div>
-        <div className="stat-value">1,200</div>
-        <div className="stat-desc">↘︎ 90 (14%)</div>
+        <div className="stat-title">New Age</div>
+        <div className="stat-value">+1</div>
+        <div className="stat-desc">↗︎ up to 90</div>
       </div>
     
     </div>
