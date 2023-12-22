@@ -4,7 +4,7 @@ export function LiveMessageBox() {
   const newMessage = useSignal("Happy new year.");
 
   useSignalEffect(() => {
-    const es = new EventSource("/api/sse");
+    let es = new EventSource("/api/sse");
 
     es.addEventListener("message", (e) => {
       newMessage.value = JSON.parse(e.data);
@@ -13,9 +13,9 @@ export function LiveMessageBox() {
 
     es.addEventListener("error", async () => {
       es.close();
-      // const backoff = 10000 + Math.random() * 5000;
-      // await new Promise((resolve) => setTimeout(resolve, backoff));
-      // es = new EventSource("/api/sse");
+      const backoff = 5000 + Math.random() * 5000;
+      await new Promise((resolve) => setTimeout(resolve, backoff));
+      es = new EventSource("/api/sse");
     }); 
 
   });
