@@ -8,5 +8,7 @@ export default {
   daisyui: {
     themes: false //["light", "dark", "cupcake", "synthwave"],
   },
-  plugins: [daisyui],
+  plugins: [
+    daisyui
+  ],
 } as Config;

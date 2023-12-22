@@ -25,12 +25,20 @@ export const handler: Handlers = {
 
 export default function NewMessage() {
   return (
-    <>
-      <form method="post">
-        <label for="fmsg">New message to broadcast:</label>
-        <input type="text" id="fmsg" name="fmsg" value="" />
-        <button type="submit">Broadcast</button>
-      </form>
-    </>
+    <form method="post">
+      <div class="flex flex-col p-4 justify-center">
+        <div>
+          <textarea 
+            id="fmsg" 
+            name="fmsg" 
+            placeholder="New message to broadcast" 
+            class="textarea textarea-bordered textarea-sm w-full max-w-xs" >
+          </textarea>
+        </div>
+        <div my-4>
+          <button type="submit" class="btn btn-outline">Submit</button>
+        </div>
+      </div>
+    </form>
   );
 }
