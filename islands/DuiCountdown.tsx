@@ -6,7 +6,7 @@ import { confetti_basic } from "../utils/client_effects.ts";
 
 
 // const deadline = Date.now() + 5000;
-const deadline = Date.parse('31 Dec 2023 23:59:59 GMT+3');
+const deadline = Date.parse('31 Jan 2024 23:59:59 GMT+3');
 console.log(new Date().toTimeString());
 
 export function DuiCountdown(){
