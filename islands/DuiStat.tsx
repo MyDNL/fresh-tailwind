@@ -17,9 +17,9 @@ export function DuiStat(){
       </div>
       
       <div className="stat place-items-center">
-        <div className="stat-title">New Age</div>
+        <div className="stat-title">Region</div>
         <div className="stat-value">+1</div>
-        <div className="stat-desc">↗︎ up to 90</div>
+        <div className="stat-desc">{Deno.env.get("DENO_REGION")}</div>
       </div>
     
     </div>

@@ -1,8 +1,8 @@
 {
-  "build_id": "472ec10a089f741e0bbaed5ea4986f96083d21ca",
+  "build_id": "53ec388f9d1293db3f852e772e1c313d28bd083d",
   "files": {
     "main.js": [
-      "chunk-GVR7VQFS.js",
+      "chunk-P7FI2C57.js",
       "chunk-2GUEMEWN.js",
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
@@ -18,9 +18,9 @@
       "chunk-Z47A3HLT.js"
     ],
     "island-duicountdown.js": [
-      "chunk-GVR7VQFS.js",
-      "chunk-YILHZKGN.js",
-      "chunk-KNDIS3IX.js",
+      "chunk-P7FI2C57.js",
+      "chunk-FW4PXA2B.js",
+      "chunk-FPYH56NP.js",
       "chunk-UCKURDVD.js",
       "chunk-2GUEMEWN.js",
       "chunk-7XBR77FJ.js",
@@ -28,14 +28,14 @@
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
     ],
-    "chunk-GVR7VQFS.js": [],
+    "chunk-P7FI2C57.js": [],
     "island-duimodal.js": [
       "chunk-3MXJYX4G.js",
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
     ],
     "island-duistat.js": [
-      "chunk-KNDIS3IX.js",
+      "chunk-FPYH56NP.js",
       "chunk-UCKURDVD.js",
       "chunk-2GUEMEWN.js",
       "chunk-7XBR77FJ.js",
@@ -50,8 +50,8 @@
       "chunk-Z47A3HLT.js"
     ],
     "island-livemessagebox.js": [
-      "chunk-YILHZKGN.js",
-      "chunk-KNDIS3IX.js",
+      "chunk-FW4PXA2B.js",
+      "chunk-FPYH56NP.js",
       "chunk-UCKURDVD.js",
       "chunk-2GUEMEWN.js",
       "chunk-7XBR77FJ.js",
@@ -59,10 +59,10 @@
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
     ],
-    "chunk-YILHZKGN.js": [
-      "chunk-KNDIS3IX.js"
+    "chunk-FW4PXA2B.js": [
+      "chunk-FPYH56NP.js"
     ],
-    "chunk-KNDIS3IX.js": [
+    "chunk-FPYH56NP.js": [
       "chunk-UCKURDVD.js"
     ],
     "chunk-UCKURDVD.js": [
