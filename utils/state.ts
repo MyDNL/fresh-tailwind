@@ -8,8 +8,6 @@ export const particleCount = computed(() => {
   return PARTICLE_COUNT * confettiPopCount.value;
 });
 
-export const serverRegion = signal("");
-
 // export const minutesLeft = computed(() => {
 
 // })

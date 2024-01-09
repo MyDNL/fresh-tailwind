@@ -1,6 +1,10 @@
-import { confettiPopCount, particleCount } from "../utils/state.ts"
+import { confettiPopCount, particleCount } from "../utils/state.ts";
 
 export function DuiStat(){
+
+  const region = Deno.env.get("DENO_REGION") || "" ;
+  const cloudProvider = (region.split("-").length - 1 == 1) ? "GCP" : "AWS";
+
   return (
     <div className="stats stats-vertical sm:stats-horizontal shadow">
     
@@ -18,8 +22,8 @@ export function DuiStat(){
       
       <div className="stat place-items-center">
         <div className="stat-title">Region</div>
-        <div className="stat-value">+1</div>
-        <div className="stat-desc">{Deno.env.get("DENO_REGION")}</div>
+        <div className="stat-value">{cloudProvider}</div>
+        <div className="stat-desc">{region}</div>
       </div>
     
     </div>
