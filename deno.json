@@ -19,7 +19,7 @@
     "tailwindcss": "npm:tailwindcss@3.3.5",
     "tailwindcss/": "npm:/tailwindcss@3.3.5/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.3.5/plugin.js",
-    "$std/": "https://deno.land/std@0.208.0/",
+    "$std/": "https://deno.land/std@0.212.0/",
     "daisyui": "npm:daisyui@4.4.19",
     "@headlessui/react": "https://esm.sh/*@headlessui/react@1.7.17",
     "react-dom": "https://esm.sh/react-dom",

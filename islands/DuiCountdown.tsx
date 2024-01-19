@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { TimeLeft, getTimeRemaining } from "../utils/helpers.ts";
 import { confettiPopCount } from "../utils/state.ts";
-import { IS_BROWSER } from "https://deno.land/x/fresh@1.6.1/runtime.ts";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import { confetti_basic } from "../utils/client_effects.ts";
 
 
@@ -16,7 +16,7 @@ export function DuiCountdown(){
 
   if (!timerRunning.value) {
     timerRunning.value = true;
-    const x = setInterval(async () => {
+    const x = setInterval(() => {
                   timeLeft.value = getTimeRemaining(deadline);
                  
                   if (timeLeft.value.seconds == 0) {

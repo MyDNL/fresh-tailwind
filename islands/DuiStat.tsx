@@ -1,16 +1,17 @@
 import { confettiPopCount, particleCount } from "../utils/state.ts";
 
-export function DuiStat(){
+interface StatProps {
+  region: string;
+  cloudProvider: string;
+}
 
-  const region = Deno.env.get("DENO_REGION") || "" ;
-  const cloudProvider = (region.split("-").length - 1 == 1) ? "GCP" : "AWS";
-
+export function DuiStat({ region, cloudProvider }: StatProps){
   return (
     <div className="stats stats-vertical sm:stats-horizontal shadow">
     
       <div className="stat place-items-center">
         <div className="stat-title">Confetti</div>
-        <div className="stat-value">{confettiPopCount.value}</div>
+        <div className="stat-value">{confettiPopCount}</div>
         <div className="stat-desc">confetties fired</div>
       </div>
       
