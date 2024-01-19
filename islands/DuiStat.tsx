@@ -10,7 +10,7 @@ export function DuiStat(){
     
       <div className="stat place-items-center">
         <div className="stat-title">Confetti</div>
-        <div className="stat-value">{confettiPopCount}</div>
+        <div className="stat-value">{confettiPopCount.value}</div>
         <div className="stat-desc">confetties fired</div>
       </div>
       
