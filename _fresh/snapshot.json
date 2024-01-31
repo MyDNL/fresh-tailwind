@@ -1,8 +1,8 @@
 {
-  "build_id": "9abbe12084b774401034d037745cf2c4172bf8b7",
+  "build_id": "884e0f1fc464c1de41f39f17620897bbcecefd8f",
   "files": {
     "main.js": [
-      "chunk-HSTRQ6PA.js",
+      "chunk-DZ4QWZOZ.js",
       "chunk-2GUEMEWN.js",
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
@@ -18,7 +18,7 @@
       "chunk-Z47A3HLT.js"
     ],
     "island-duicountdown.js": [
-      "chunk-HSTRQ6PA.js",
+      "chunk-DZ4QWZOZ.js",
       "chunk-YILHZKGN.js",
       "chunk-KNDIS3IX.js",
       "chunk-UCKURDVD.js",
@@ -28,7 +28,7 @@
       "chunk-VZ4DKIQG.js",
       "chunk-Z47A3HLT.js"
     ],
-    "chunk-HSTRQ6PA.js": [],
+    "chunk-DZ4QWZOZ.js": [],
     "island-duimodal.js": [
       "chunk-3MXJYX4G.js",
       "chunk-VZ4DKIQG.js",
