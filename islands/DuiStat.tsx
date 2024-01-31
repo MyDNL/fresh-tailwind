@@ -1,5 +1,14 @@
 import { confettiPopCount, particleCount } from "../utils/state.ts";
 
+
+// This part is runnng both on server and client
+// But client does not know "Deno" keyword so raises an error
+// 1- Either check IS_BROWSER
+// 2- Or read values from Deno.env in index.tsx and pass here.
+//
+// const region = Deno.env.get("DENO_REGION") || "" ;
+// const cloudProvider = (region.split("-").length - 1 == 1) ? "GCP" : "AWS";
+
 interface StatProps {
   region: string;
   cloudProvider: string;
