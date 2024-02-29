@@ -6,8 +6,10 @@ import { confetti_basic } from "../utils/client_effects.ts";
 
 
 // const deadline = Date.now() + 5000;
-const deadline = Date.parse('29 Feb 2024 23:59:59 GMT+3');
-console.log(new Date().toTimeString());
+// const deadline = Date.parse('29 Feb 2024 23:59:59 GMT+3');
+const today = new Date();
+const deadline = new Date(today.getFullYear(), today.getMonth() + 1, 0, 23, 59, 59);
+console.log(deadline.toString());
 
 export function DuiCountdown(){
   const timeLeft = useSignal({} as TimeLeft);
@@ -17,7 +19,7 @@ export function DuiCountdown(){
   if (!timerRunning.value) {
     timerRunning.value = true;
     const x = setInterval(() => {
-                  timeLeft.value = getTimeRemaining(deadline);
+                  timeLeft.value = getTimeRemaining(deadline.getTime());
                  
                   if (timeLeft.value.seconds == 0) {
                     confettiPopCount.value += 1;
