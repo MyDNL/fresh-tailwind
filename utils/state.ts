@@ -1,6 +1,6 @@
 import { computed, signal } from "@preact/signals";
 
-export const PARTICLE_COUNT = 90;
+export const PARTICLE_COUNT = 120;
 
 export const confettiPopCount = signal(0);
 

@@ -11,9 +11,8 @@ import * as $test from "./routes/test.tsx";
 import * as $DuiCountdown from "./islands/DuiCountdown.tsx";
 import * as $DuiModal from "./islands/DuiModal.tsx";
 import * as $DuiStat from "./islands/DuiStat.tsx";
-import * as $HuiTab from "./islands/HuiTab.tsx";
 import * as $LiveMessageBox from "./islands/LiveMessageBox.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
@@ -28,7 +27,6 @@ const manifest = {
     "./islands/DuiCountdown.tsx": $DuiCountdown,
     "./islands/DuiModal.tsx": $DuiModal,
     "./islands/DuiStat.tsx": $DuiStat,
-    "./islands/HuiTab.tsx": $HuiTab,
     "./islands/LiveMessageBox.tsx": $LiveMessageBox,
   },
   baseUrl: import.meta.url,

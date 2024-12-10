@@ -1,5 +1,5 @@
 import TwSimpleList from "../components/TwSimpleList.tsx";
-import { MyTabs } from "../islands/HuiTab.tsx";
+// import { MyTabs } from "../islands/HuiTab.tsx";
 import { DuiModal } from "../islands/DuiModal.tsx";
 
 export default function Test() {
@@ -22,7 +22,7 @@ export default function Test() {
           <p> - It is a React component.</p>
           <p> - Preact/compat mode is needed to use it.</p>
         </div>
-        <MyTabs />
+        {/* <MyTabs /> */}
         <div>
           <p>This is a "Simple StackedList" component from TailwindUI</p>
           <p> - Just copy-paste the html code.</p>
